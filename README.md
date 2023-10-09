@@ -6,9 +6,11 @@ I created a Python project to analyze a Netflix dataset obtained from Kaggle. Th
 Project Steps:
 1. Data Cleaning
  - Load the dataset into a Pandas DataFrame.
- - Check for missing values and handle them appropriately (imputation or removal)
+ - See the structure of the dataset using the info() command
+ - Check for missing values and handle them appropriately (replace or remove)
  - Handle duplicates
- - Explore and clean columns, dealing with multiple values or missing information
+ - Remove the "s" character from the show_id column
+ - Split values and keep the first before the comma
 
 2. Exploratory Data Analysis (EDA)
  - Explore the distribution of content types (movies vs. TV shows).
@@ -16,7 +18,8 @@ Project Steps:
  - Investigate the distribution of release years and check for trends over time.
  - Analyze the distribution of ratings.
  - Explore the relationship between the duration of content and its type.
- - Examine the most common genres and categories of content
+ - Examine the top 5 favored genre
+ - Analyze the top 10 Movies/TV Show numbers per duration
  - Explore the most famous actors by the number of movies/shows they appeared in
 
 3. Visualization 
@@ -24,3 +27,4 @@ Project Steps:
  - Create a bar chart for the distribution of content types.
  - Plot a time series for the addition of content over the years
  - Create a pie chart to show the distribution of type content (movies vs TV Shows)
+ - Horizontal bar chart for the top 10 countries based on the number of titles they produced
